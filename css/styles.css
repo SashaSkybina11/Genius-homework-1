@@ -1,0 +1,222 @@
+  /*-- Шрифти -- */
+
+  @font-face {
+      font-display: swap;
+      
+      font-family: 'Play';
+      font-style: normal;
+      font-weight: 400;
+      src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
+  }
+
+  @font-face {
+      font-display: swap;
+      
+      font-family: 'Play';
+      font-style: normal;
+      font-weight: 700;
+      src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+  }
+  :root {
+    --color-primary-light: rgba(43, 127, 255, 1);
+    --color-primary-white: #ffffff;
+    --color-primary-dark: rgba(1, 28, 68, 1);
+}
+
+@font-face {
+    font-display: swap;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v30-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+}
+/* До всього файлу */
+
+ul {
+    list-style-type: none;
+}
+h2 {
+    font-family: "Play", sans-serif;
+    line-height: 0.86;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+address {
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+} 
+
+/* Шапка */
+
+.header-text {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    line-height: 0.85;
+    font-size: 18px;
+}
+.header-text:hover {
+    color: var(--color-primary-dark);
+    font-weight: 700;
+}
+
+/* Зоголовок "Beauty zona"  */
+
+.main-title {
+    background-color: transparent;
+    color: var(--color-primary-light);
+    font-family: "Play" , sans-serif ;
+    text-transform: capitalize;
+    font-size: 140px;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Всі h2 - заголовки  */
+
+.hero-title {
+    color: var(--color-primary-light);
+    font-size: 64px;
+    font-weight: 700;
+}
+.hero-title .accent {
+    color: var(--color-primary-dark);
+}
+.hero-title-transform {
+text-transform: capitalize;
+}
+ /* В секції №1 текст */
+.section-text {
+   color: rgba(74, 74, 74, 1);
+   font-size: 12px;
+   line-height: 0.6;
+   
+}
+.sectionfirst-text{
+    font-size: 18px;
+    font-weight: 400;
+}
+/*В секції №2 текст !*/
+.sectionsecond-text {
+    line-height: 0.57;
+    font-size: 22px;
+    color: var(--color-primary-dark);
+}
+.sectionsecond-transform {
+    font-weight: 600;
+    text-transform: capitalize;
+    }
+ /* В секції №3 текст */
+.text-black {
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    line-height: 0.75;
+}
+/* В секції №4 текст */
+ .text-white {
+    font-size: 22px;
+    color: var(--color-primary-white);
+    line-height: 0.8;
+ }
+/* В секції №5 */
+.section-last {
+    color: var(--color-primary-white);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 0.85;
+}
+.section-last-transform {
+    color: var(--color-primary-light);
+}
+/* В секції №5 і футер текст */
+.text-gris {
+    color: rgba(116, 114, 114, 1);
+}
+
+.text-gris-transform {
+    text-decoration: underline;
+    color: rgba(116, 114, 114, 1); 
+}
+
+/* Footer */
+
+.nav-transform {
+    color: var(--color-primary-white);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 0.85;
+}
+ .address-transform {
+    color: var(--color-primary-white);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 0.85;
+ }
+.data-protected {
+    color: rgba(116, 114, 114, 1);
+    font-size: 13px;
+}
+/* КНОПКА "Замовити дзвінок" */
+.button-main {
+    color: var(--color-primary-white);
+    background-color:var(--color-primary-light);
+    border: 2px solid var(--color-primary-white); 
+    cursor: pointer;
+    font-family: "Roboto" , sans-serif;
+    border-radius: 32px;
+    padding: 16px 32px 16px 32px;
+    gap: 10px;
+    border-radius: 32px;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+.button-main:hover {
+    background-color: transparent;
+    color: var(--color-primary-dark);
+    border: 2px solid var(--color-primary-light)
+}
+/* КНОПКА "Записатися безкоштовно" */
+.button {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-white);
+    border:2px solid var(--color-primary-white);
+    border-radius: 32px;
+    width: Hug (281px)px;
+    height: Hug (53px)px;
+    padding: 16px 32px 16px 32px;
+    gap: 10px; 
+    cursor: pointer; 
+    font-family: "Roboto" , sans-serif;
+    font-weight: 600;
+}
+.button:hover {
+    background-color: transparent;
+    color: var(--color-primary-dark);
+    border: 2px solid var(--color-primary-light)
+}
