@@ -53,6 +53,8 @@
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 h2 {
     font-family: "Play", sans-serif;
@@ -61,6 +63,7 @@ h2 {
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+    margin: 0;
 }
 
 address {
@@ -70,9 +73,30 @@ address {
 * {
     box-sizing: border-box;
 } 
+h1,h2,h3,h4,h5,h6,p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
+.section {
+    padding: 48px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;  
+}
 /* Шапка */
-
+.header {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.container-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 .header-text {
     color: var(--color-primary-light);
     text-decoration: none;
@@ -81,12 +105,27 @@ address {
 }
 .header-text:hover {
     color: var(--color-primary-dark);
-    font-weight: 700;
+    
 }
 
+.header-nav {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    flex-grow: 1;
+    justify-content: center;
+}
 /* Зоголовок "Beauty zona"  */
 
 .main-title {
+    margin-bottom: 40px;
     background-color: transparent;
     color: var(--color-primary-light);
     font-family: "Play" , sans-serif ;
@@ -97,9 +136,11 @@ address {
     line-height: 1.2;
 }
 
+
 /* Всі h2 - заголовки  */
 
 .hero-title {
+    padding-bottom: 48px;
     color: var(--color-primary-light);
     font-size: 64px;
     font-weight: 700;
@@ -111,31 +152,86 @@ address {
 text-transform: capitalize;
 }
  /* В секції №1 текст */
+.section-first {
+    padding-top: 122.52px;
+    padding-bottom: 63px;
+}
+
 .section-text {
-   color: rgba(74, 74, 74, 1);
+   padding-top: 14px;
+    color: rgba(74, 74, 74, 1);
    font-size: 12px;
    line-height: 0.6;
    
 }
 .sectionfirst-text{
+    padding-bottom: 16px;
     font-size: 18px;
     font-weight: 400;
 }
+
+.container-first {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 /*В секції №2 текст !*/
+.section-second {
+    padding-bottom: 88px;
+    padding-top: 63px;
+
+}
+.hero-title {
+    padding-bottom: 40px;
+}
 .sectionsecond-text {
-    line-height: 0.57;
+    line-height: 1;
+    padding-bottom: 40px;
     font-size: 22px;
     color: var(--color-primary-dark);
 }
+
 .sectionsecond-transform {
     font-weight: 600;
     text-transform: capitalize;
     }
+.container-second {
+    display: flex;
+   justify-content: space-between;
+   gap: 32px;
+
+}
+.second-item {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 709px;
+}
+.second-img {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    flex-basis: 499px;
+}
+
  /* В секції №3 текст */
+ .section-third {
+    padding-top: 88px;
+    padding-bottom: 48px;
+ }
 .text-black {
     color: rgba(0, 0, 0, 1);
     font-size: 18px;
-    line-height: 0.75;
+    line-height: 1;
+    display: flex;
+    gap: 56px;
+}
+
+.format-card {
+    background-color: var(--color-primary-white);
+    padding: 24px 32px;
 }
 /* В секції №4 текст */
  .text-white {
@@ -143,7 +239,23 @@ text-transform: capitalize;
     color: var(--color-primary-white);
     line-height: 0.8;
  }
+ .text-procedures {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+ }
+ .item-procedures {
+    flex-basis: calc( (100% - 32px) / 3);
+ }
+.format-procedures {
+    background-color: rgb(233, 102, 102);
+    
+}
 /* В секції №5 */
+.section-fifty {
+    padding-top: 48px;
+    padding-bottom: 96px;
+}
 .section-last {
     color: var(--color-primary-white);
     font-weight: 600;
@@ -152,6 +264,14 @@ text-transform: capitalize;
 }
 .section-last-transform {
     color: var(--color-primary-light);
+}
+
+.container-fifty {
+    display: flex;
+    gap: 32px;
+}
+.container-maps {
+    flex-basis: 605;
 }
 /* В секції №5 і футер текст */
 .text-gris {
@@ -165,6 +285,9 @@ text-transform: capitalize;
 
 /* Footer */
 
+.footer-block {
+    padding: 56px 0;
+}
 .nav-transform {
     color: var(--color-primary-white);
     text-decoration: none;
@@ -181,6 +304,7 @@ text-transform: capitalize;
     color: rgba(116, 114, 114, 1);
     font-size: 13px;
 }
+
 /* КНОПКА "Замовити дзвінок" */
 .button-main {
     color: var(--color-primary-white);
